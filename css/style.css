@@ -357,7 +357,7 @@ p{
 
 /* home page Parallax */
 .parallax-effect-home {
-  background-image: url('/images/homepage/parallax.png');
+  background-image: url('./images/homepage/parallax.png');
   height: 40vh;
   background-attachment: fixed;
   background-position: center;
