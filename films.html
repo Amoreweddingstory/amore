@@ -15,34 +15,6 @@
     <link rel="stylesheet" href="./css/films.css">
     <link rel="icon" href="./images/logo.png" type="image/icon type">
     <title>Films</title>
-    <style>
-
-        .films-container {
-            max-width: 80rem;
-            margin: 5rem auto;
-            padding: 0 2rem 2rem;
-        }
-        .thumbnail-container:hover {
-            -ms-transform: scale(1.05); /* IE 9 */
-            -webkit-transform: scale(1.05); /* Safari 3-8 */
-            transform: scale(1.05); 
-        }
-
-        .films{
-            margin-bottom: 5rem;
-        }
-
-        .films img {
-            width: 100%;
-            transition: 0.5s all ease-in-out;
-        }
-
-        .films:hover img {
-            -ms-transform: scale(1.05); /* IE 9 */
-            -webkit-transform: scale(1.05); /* Safari 3-8 */
-            transform: scale(1.05);
-        }
-    </style>
 </head>
 
 <body>
@@ -50,7 +22,7 @@
         <div class="container">
             <nav>
                 <div class="logo_area">
-                    <a href=""><img class="logo_img" src="./images/logo.png"></a>
+                    <a href="./index.html"><img class="logo_img" src="./images/logo.png"></a>
                 </div>
                 <div class="inner">
                     <ul id="">
@@ -81,7 +53,7 @@
             </nav>
         </div>
     </header>
-
+<a href="#" id="scroll" style="display: none;"><span></span></a>
     <body id="body">
         <main>
             <div id="films-parallax">
@@ -197,9 +169,13 @@
             </a>
         </div>
         <div class="footer-insta">
-            <h3>follow us on Instagram</h3>
-            <a href="https://www.instagram.com/amoreweddingstory/"><img src="./images/instagram.png" alt=""
-                    width="20px"></a> <br><br>
+            <h3>follow us on Social Media</h3>
+            <a href="https://www.facebook.com/Amore-Wedding-Story-107498007303156/"><img src="./images/facebook.png" alt=""
+                    width="40px" class="footer-padding"></a>
+            <a href="https://www.instagram.com/amoreweddingstory/"><img src="./images/instagram.png" alt="" width="30px"
+                    class="footer-padding"></a>
+            <a href="https://www.youtube.com/channel/UCEms8phxU-oGVElpjEGQpew"><img src="./images/youtube.png" alt=""
+                    width="42px" class="footer-padding"></a> <br><br>
         </div>
         <div class="gallery">
             <div class="gallery-img">
@@ -215,19 +191,7 @@
             <h2>Amore Wedding Story</h2>
         </div>
     </footer>
-
-    <script>
-        function myFunction() {
-
-        }
-        function openNav() {
-            document.getElementById("myNav").style.width = "100%";
-        }
-
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-        }
-    </script>
+    <script src="./javascript/script.js"></script>
     <script>
         document.getElementById("body").onscroll = function myFunction() {
             var scrolltotop = document.scrollingElement.scrollTop;
@@ -237,16 +201,6 @@
             var yvalue = scrolltotop * factor;
             target.style.backgroundPosition = xvalue + " " + yvalue + "px";
         }
-    </script>
-    <script>
-        $(document).on("scroll", function () {
-
-            if ($(document).scrollTop() > 100) {
-                $("header").removeClass("large").addClass("small");
-            } else {
-                $("header").removeClass("small").addClass("large");
-            }
-        });
     </script>
 </body>
 
