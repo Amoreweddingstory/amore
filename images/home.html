@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- footer icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/logo.png" type="image/icon type">
+    <title>Amore Wedding Story</title>
+    
+    <style>
+        
+        .carousel-item {
+            transition: transform 2.6s ease-in-out;
+        }
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 0s 2.6s;
+}
+        .testimonial{
+            padding:0 20vw;
+        }
+        .testimonial-container {
+            max-width: 60rem;
+            margin: 0 auto;
+            padding: 0 2rem 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="large">
+        <div class="container">
+            <nav>
+                <div class="logo_area">
+                    <a href=""><img class="logo_img" src="./images/logo.png"></a>
+                </div>
+                <div class="inner">
+                    <ul id="">
+                        <li><a href="/home.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
+                        <li><a href="./films.html">Films</a></li>
+                        <li><a href="./blogs.html">Blogs</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="button-area">
+                    <button onclick="openNav()">&#9776</button>
+                </div>
+                <!-- <span class="havi" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> -->
+                <div id="myNav" class="overlay">
+    
+                    <div class="overlay-content">
+                        <a href="./home.html">Home</a>
+                        <a href="./about.html">About</a>
+                        <a href="./portfolio.html">Portfolio</a>
+                        <a href="./films.html">Films</a>
+                        <a href="./blogs.html">Blogs</a>
+                        <a href="./contact.html">Contact</a>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container-carousel carousel-margin-top">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="./images/homepage/hero2.png"
+                        alt="Los Angeles" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="./images/homepage/hero1.png"
+                        alt="Chicago" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="./images/homepage/hero4.png"
+                        alt="New york" style="width:100%;">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="about" style="min-height: 100vh;">
+        <div class="row">
+
+            <div class="col-6">
+                <div class="parent">
+                    <h1>
+                        What Defines Us?
+                    </h1>
+                </div>
+            </div>
+            <div class="col-6">
+                <p>
+                    Marriage is such an auspicious day. It marks the beginning—the beginning of the family— and is a life-long commitment.
+                    You are ready for your new journey with a life partner, a teammate, as you go on writing your story together. Marriage
+                    is a celebration of love. A love that will always be there. It is such a beautiful moment that you are bound to cherish
+                    it forever. You deserve the passionately unforgettable, meaningful, love-filled memoirs of your wedding, and we are here
+                    to help you create it.
+                    <br><br>
+                    A beautiful memory that you can keep forever.
+                </p>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 0px;">
+            <div class="col-6 none">
+                <img src="./images/homepage/collage1.png"
+                    alt="" width="95%">
+            </div>
+            <div class="col-6 none">
+                <img src="./images/homepage/collage2.png"
+                    alt="" width="95%">
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-effect-home">
+        <div class="">
+            
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="row">
+            <div class="col-6 mobile-visible" >
+                <div class="parent">
+                    <h1>
+                        What We Offer?
+                    </h1>
+                </div>
+            </div>
+            <div class="col-6 ">
+                <p>
+                    Our goal is to document your wedding story in an authentic setting, capturing exactly the way it looks and feels. We
+                    want to photograph the connection you share with your partner. We want to capture every possible emotion a marriage
+                    ceremony embraces. You only get this moment once. So, you and us together, let us create something real for you; an
+                    heirloom for you to pass down your beautiful love story from generation to generation.
+                    <br><br>
+                    We want you to enjoy your special day and let us take care of framing the memories.
+                    <br><br>
+                    Our goal is clear and simple. We want to tell your wedding story through captivating imageries, through our skills and
+                    passion that we put our heart and soul into.
+                </p>
+            </div>
+            <div class="col-6 visible">
+                <div class="parent">
+                    <h1>
+                        What We Offer?
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="row">
+        <div class="col-6">
+            <div class="parent">
+                <h1>
+                    Our work Aesthetic
+                </h1>
+            </div>
+        </div>
+        <div class="col-6">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                make a type specimen
+                book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                remaining essentially
+                unchanged.
+            </p>
+        </div>
+    </div>-->
+    <div class="testimonial-container testimonial">
+        <h1 class="text-center bold">Some kind words</h1>
+        <div id="myCarousel2" class="carousel slide carousel-fade" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel2" data-slide-to="1"></li>
+                <li data-target="#myCarousel2" data-slide-to="2"></li>
+            </ol>
+    
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+    
+                <div class="item active">
+                    <img src="https://cdn.wallpapersafari.com/26/35/MOC2mo.jpg" alt="Los Angeles" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Los Angeles</h3>
+                        <p>LA is always so much fun!</p>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <img src="https://s1.1zoom.me/b4757/855/Hands_Tattoos_Glance_Body_piercing_516599_1920x1080.jpg"
+                        alt="Chicago" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Chicago</h3>
+                        <p>Thank you, Chicago!</p>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <img src="https://wallpaper.dog/large/5457706.jpg" alt="New York" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>New York</h3>
+                        <p>We love the Big Apple!</p>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    </div>
+    <footer>
+        <div class="footer-title">
+            <h1>Lets Make Memories Together</h1>
+        </div>
+        <div class="footer-contact">
+            <h3>Drop by and say hi.</h3>
+            <a href="/contact.html" style="text-decoration: none;"><h4>Contact Us</h4></a>
+        </div>
+        <div class="footer-insta">
+            <h3>follow us on Instagram</h3>
+            <a href="https://www.instagram.com/amoreweddingstory/"><img src="./images/instagram.png" alt="" width="20px"></a> <br><br>
+        </div>
+        <div class="gallery">
+            <div class="gallery-img">
+                <img src="./images/footer/1.jpg" alt="" width="50%">
+                <img src="./images/footer/2.jpg"
+                    alt="" width="50%">
+            </div>
+            <div class="gallery-img">
+                <img src="./images/footer/3.jpg"
+                    alt="" width="50%">
+                <img src="./images/footer/4.jpg" alt="" width="50%">
+            </div>
+        </div>
+        <div class="footer-name">
+            <h2>Amore Wedding Story</h2>
+        </div>
+    </footer>
+
+    <script>
+        function myFunction() {
+
+        }
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    
+        document.getElementById("body").onscroll = function myFunction() {
+            var scrolltotop = document.scrollingElement.scrollTop;
+            var target = document.getElementById("main1");
+            var xvalue = "center";
+            var factor = 0.3;
+            var yvalue = scrolltotop * factor;
+            target.style.backgroundPosition = xvalue + " " + yvalue + "px";
+        }
+    </script>
+    <script>
+        $(document).on("scroll", function () {
+
+            if ($(document).scrollTop() > 100) {
+                $("header").removeClass("large").addClass("small");
+            } else {
+                $("header").removeClass("small").addClass("large");
+            }
+        });
+    </script>
+</body>
+
+</html>

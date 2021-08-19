@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/films.css">
+    <link rel="icon" href="./images/logo.png" type="image/icon type">
+    <title>Films</title>
+    <style>
+
+        .films-container {
+            max-width: 80rem;
+            margin: 5rem auto;
+            padding: 0 2rem 2rem;
+        }
+        .thumbnail-container:hover {
+            -ms-transform: scale(1.05); /* IE 9 */
+            -webkit-transform: scale(1.05); /* Safari 3-8 */
+            transform: scale(1.05); 
+        }
+
+        .films{
+            margin-bottom: 5rem;
+        }
+
+        .films img {
+            width: 100%;
+            transition: 0.5s all ease-in-out;
+        }
+
+        .films:hover img {
+            -ms-transform: scale(1.05); /* IE 9 */
+            -webkit-transform: scale(1.05); /* Safari 3-8 */
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="large">
+        <div class="container">
+            <nav>
+                <div class="logo_area">
+                    <a href=""><img class="logo_img" src="../images/logo.png"></a>
+                </div>
+                <div class="inner">
+                    <ul id="">
+                        <li><a href="/home.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
+                        <li><a href="./films.html">Films</a></li>
+                        <li><a href="./blogs.html">Blogs</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="button-area">
+                    <button onclick="openNav()">&#9776</button>
+                </div>
+                <!-- <span class="havi" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> -->
+                <div id="myNav" class="overlay">
+
+                    <div class="overlay-content">
+                        <a href="./home.html">Home</a>
+                        <a href="./about.html">About</a>
+                        <a href="./portfolio.html">Portfolio</a>
+                        <a href="./films.html">Films</a>
+                        <a href="./blogs.html">Blogs</a>
+                        <a href="./contact.html">Contact</a>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <body id="body">
+        <main>
+            <div id="films-parallax">
+            </div>
+        </main>
+    </body>
+
+    <div>
+        <h1 style="text-align: center;">Films</h1>
+    </div>
+    
+    <div class="films-container">
+        <div class="films">
+            <a href="https://www.youtube.com/watch?v=wC_yLbEYN6o&t=5s">
+                <img src="./images/thumbnail/Jyoti.jpg" alt="">
+            </a>
+            <h3>Jyoti and Deepman / Jaipur </h3>
+        </div>
+        <div class="films">
+            <a href="https://www.youtube.com/watch?v=4uwT7MyG6Kg&t=1s">
+                <img src="./images/thumbnail/Somansh.jpg" alt="">
+            </a>
+            <h3>Somansh & Navjeet / Delhi </h3>
+        </div>
+        <div class="films" style="margin-bottom: 2rem;">
+            <a href="https://www.youtube.com/watch?v=QUAEqwy3qFo">
+                <img src="./images/thumbnail/Megha.jpg" alt="">
+            </a>
+            <h3>Megha & Sachin / Delhi </h3>
+        </div>
+    </div>
+
+    <!--<div class="wrap">
+        <div class="box-video">
+            <div class="bg-video"
+                style="background-image: url(https://unsplash.imgix.net/photo-1425036458755-dc303a604201?fit=crop&fm=jpg&q=75&w=1000);">
+                <div class="bt-play"></div>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/9YffrCViTVk?rel=0&amp;controls=1&amp;showinfo=0"
+                    frameborder="0" allow="autoplay; encrypted-media"></iframe>
+            </div>
+        </div>
+        <div class="box-text">
+            <h2>havinesh</h2>
+        </div>
+    
+        <div class="box-video">
+            <div class="bg-video"
+                style="background-image: url(https://unsplash.imgix.net/photo-1425036458755-dc303a604201?fit=crop&fm=jpg&q=75&w=1000);">
+                <div class="bt-play"></div>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/9YffrCViTVk?rel=0&amp;controls=1&amp;showinfo=0"
+                    frameborder="0" allow="autoplay; encrypted-media"></iframe>
+            </div>
+        </div>
+    
+        <div class="box-video">
+            <div class="bg-video"
+                style="background-image: url(https://ununsplash.imgix.net/photo-1418225043143-90858d2301b4?fit=crop&fm=jpg&q=75&w=1000);">
+                <div class="bt-play">Play</div>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9YffrCViTVk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wC_yLbEYN6o" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wC_yLbEYN6o" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UPBNq9tH-lk" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QUAEqwy3qFo" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    
+
+    <script>
+        $(".box-video").click(function () {
+            $('iframe', this)[0].src += "&amp;autoplay=1";
+            $(this).addClass('open');
+        });
+    </script>
+
+    -->
+
+
+
+    <footer>
+        <div class="footer-title">
+            <h1>Lets Make Memories Together</h1>
+        </div>
+        <div class="footer-contact">
+            <h3>Drop by and say hi.</h3>
+            <a href="/contact.html" style="text-decoration: none;">
+                <h4>Contact Us</h4>
+            </a>
+        </div>
+        <div class="footer-insta">
+            <h3>follow us on Instagram</h3>
+            <a href="https://www.instagram.com/amoreweddingstory/"><img src="./images/instagram.png" alt=""
+                    width="20px"></a> <br><br>
+        </div>
+        <div class="gallery">
+            <div class="gallery-img">
+                <img src="./images/footer/1.jpg" alt="" width="50%">
+                <img src="./images/footer/2.jpg" alt="" width="50%">
+            </div>
+            <div class="gallery-img">
+                <img src="./images/footer/3.jpg" alt="" width="50%">
+                <img src="./images/footer/4.jpg" alt="" width="50%">
+            </div>
+        </div>
+        <div class="footer-name">
+            <h2>Amore Wedding Story</h2>
+        </div>
+    </footer>
+
+    <script>
+        function myFunction() {
+
+        }
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+    <script>
+        document.getElementById("body").onscroll = function myFunction() {
+            var scrolltotop = document.scrollingElement.scrollTop;
+            var target = document.getElementById("films-parallax");
+            var xvalue = "center";
+            var factor = 0.3;
+            var yvalue = scrolltotop * factor;
+            target.style.backgroundPosition = xvalue + " " + yvalue + "px";
+        }
+    </script>
+    <script>
+        $(document).on("scroll", function () {
+
+            if ($(document).scrollTop() > 100) {
+                $("header").removeClass("large").addClass("small");
+            } else {
+                $("header").removeClass("small").addClass("large");
+            }
+        });
+    </script>
+</body>
+
+</html>
