@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/logo.png" type="image/icon type">
+    <title>Thank you</title>
+</head>
+
+<body>
+    <header class="large">
+        <div class="container">
+            <nav>
+                <div class="logo_area">
+                    <a href="./index.html"><img class="logo_img" src="./images/logo.png"></a>
+                </div>
+                <div class="inner">
+                    <ul id="">
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
+                        <li><a href="./films.html">Films</a></li>
+                        <li><a href="./blogs.html">Blogs</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="button-area">
+                    <button onclick="openNav()">&#9776</button>
+                </div>
+                <!-- <span class="havi" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> -->
+                <div id="myNav" class="overlay">
+
+                    <div class="overlay-content">
+                        <a href="./home.html">Home</a>
+                        <a href="./about.html">About</a>
+                        <a href="./portfolio.html">Portfolio</a>
+                        <a href="./films.html">Films</a>
+                        <a href="./blogs.html">Blogs</a>
+                        <a href="./contact.html">Contact</a>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+
+    <body id="body">
+        <main>
+            <div id="portfolio-parallax">
+            </div>
+        </main>
+    </body>
+
+    <div style="margin: 100px 0 100px 0;">
+        <h1 style="text-align: center; margin-bottom: 50px;">Thank you for contacting. We will get back to you shortly.</h1>
+        <a href="./home.html" style="text-align: center; margin-bottom: 50px; text-decoration: none;"><h3>Click here to go back to home page.</h3></a>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-title">
+            <h1>Lets Make Memories Together</h1>
+        </div>
+        <div class="footer-contact">
+            <h3>Drop by and say hi.</h3>
+            <a href="./contact.html" style="text-decoration: none;">
+                <h4>Contact Us</h4>
+            </a>
+        </div>
+        <div class="footer-insta">
+            <h3>follow us on Social Media</h3>
+            <a href="https://www.facebook.com/Amore-Wedding-Story-107498007303156/"><img src="./images/facebook.png"
+                    alt="" width="40px" class="footer-padding"></a>
+            <a href="https://www.instagram.com/amoreweddingstory/"><img src="./images/instagram.png" alt="" width="30px"
+                    class="footer-padding"></a>
+            <a href="https://www.youtube.com/channel/UCEms8phxU-oGVElpjEGQpew"><img src="./images/youtube.png" alt=""
+                    width="42px" class="footer-padding"></a> <br><br>
+        </div>
+        <div class="gallery">
+            <div class="gallery-img">
+                <img src="./images/footer/1.jpg" alt="" width="50%">
+                <img src="./images/footer/2.jpg" alt="" width="50%">
+            </div>
+            <div class="gallery-img">
+                <img src="./images/footer/3.jpg" alt="" width="50%">
+                <img src="./images/footer/4.jpg" alt="" width="50%">
+            </div>
+        </div>
+        <div class="footer-name">
+            <h2>Amore Wedding Story</h2>
+        </div>
+    </footer>
+    <script src="./javascript/script.js"></script>
+    <script>
+        document.getElementById("body").onscroll = function myFunction() {
+            var scrolltotop = document.scrollingElement.scrollTop;
+            var target = document.getElementById("portfolio-parallax");
+            var xvalue = "center";
+            var factor = 0.3;
+            var yvalue = scrolltotop * factor;
+            target.style.backgroundPosition = xvalue + " " + yvalue + "px";
+        };
+    </script>
+</body>
+
+</html>
